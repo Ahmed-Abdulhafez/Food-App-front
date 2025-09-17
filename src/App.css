@@ -1,0 +1,48 @@
+
+
+
+.Container {
+  max-width: 1265px;
+  margin: auto;
+}
+
+#Home {
+  width: 100%;
+  height: 100vh;
+  padding: 0 5px;
+}
+
+#Home .mainHome {
+  padding-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+#Home .mainHome .right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+#Home .mainHome .right img {
+  width: 300px;
+}
+#Home .mainHome .left,
+img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #Home .mainHome {
+    grid-template-columns: 1fr;
+  }
+  #Home .mainHome .right {
+    width: 100%;
+    padding: 0 10px;
+  }
+  #Home .mainHome .right img {
+    width: 350px;
+  }
+}
